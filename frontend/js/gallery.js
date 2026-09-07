@@ -37,7 +37,7 @@ export const galleryImages = [
 
     {
         id: 6,
-        image: "assets/daypool.webp",
+        image: "assets/dayPool.webp",
         category: "dining",
         title: "Restaurant"
     },
