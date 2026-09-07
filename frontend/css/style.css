@@ -1,0 +1,21 @@
+      /* PAGES */
+@import url(pages/home.css);
+@import url(pages/about.css);
+@import url(pages/footer.css);
+@import url(pages/nav.css);
+@import url(pages/rooms.css);
+@import url(./gallery.css);
+@import url(./restaurant.css);
+@import url(pages/contact.css);
+
+    /* STATIC CSS */
+@import url(./reset.css);
+@import url(./layout.css);
+@import url(./variables.css);
+@import url(./components.css);
+@import url(./responsive.css);
+
+
+
+
+

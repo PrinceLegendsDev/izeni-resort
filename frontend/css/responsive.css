@@ -1,0 +1,758 @@
+/* ========================================
+   HOME PAGE
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* ========================================
+       HERO
+    ======================================== */
+
+    .hero {
+        min-height: 65vh;
+    }
+
+    .hero-images img {
+        object-position: center;
+    }
+
+
+    /* ========================================
+       STICKY BOOKING BUTTON
+    ======================================== */
+
+    .stick-book {
+        bottom: 18px;
+        width: 100%;
+        padding: 0 var(--space-sm);
+    }
+
+    .stick-book a {
+        width: 100%;
+        max-width: none;
+
+        min-height: 50px;
+
+        font-size: var(--font-size-md);
+    }
+
+
+    /* ========================================
+       WHY STAYFLOW
+    ======================================== */
+
+    .home-cards {
+        padding: var(--space-md) 0;
+    }
+
+    .home-reason {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+
+        padding: var(--space-md) 0;
+    }
+
+    .home-reason img {
+        height: 300px;
+    }
+
+    .why-us {
+        text-align: center;
+    }
+
+    .why-us h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .why-us p {
+        font-size: var(--font-size-md);
+        line-height: 1.6;
+    }
+
+
+    /* ========================================
+       HOME DETAILS
+    ======================================== */
+
+    .home-details {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+
+        padding: var(--space-md) 0;
+    }
+
+    .home-details .card {
+        padding: var(--space-md);
+    }
+
+    .home-details .card h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .home-details p {
+        font-size: var(--font-size-md);
+    }
+
+    /* ========================================
+   MOBILE NAVIGATION
+======================================== */
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+
+        position: relative;
+        z-index: 1101;
+
+        border: none;
+        background: transparent;
+
+        font-size: 1.6rem;
+
+        cursor: pointer;
+    }
+
+
+    /* ========================================
+       FULL SCREEN MENU
+    ======================================== */
+
+    #nav {
+        position: fixed;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100dvh;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: var(--space-lg);
+
+        background: var(--color-primary);
+
+        transform: translateY(100%);
+
+        transition: transform 0.35s ease;
+
+        z-index: 1100;
+    }
+
+    body.menu-open {
+    overflow: hidden;
+}
+
+    /* ========================================
+       OPEN MENU
+    ======================================== */
+
+    #nav.active {
+        transform: translateY(0);
+    }
+
+
+    /* ========================================
+       MENU LINKS
+    ======================================== */
+
+    #nav a {
+        width: auto;
+
+        padding: var(--space-xs);
+
+        font-size: var(--font-size-xl);
+
+        text-align: center;
+    }
+}
+
+.footer-container {
+        grid-template-columns: 1fr;
+
+        gap: var(--space-lg);
+
+        padding: var(--space-lg) 0;
+    }
+
+    .footer-brand,
+    .footer-contact,
+    .footer-links,
+    .footer-social {
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    /* ROOM HEADER */
+
+.room-header {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.room-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.room-header p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* ROOM CONTAINER */
+
+#room-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+
+/* ROOM CARD */
+
+.room-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+/* IMAGE */
+
+.room-image {
+    width: 100%;
+    height: 220px;
+}
+
+.room-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* DETAILS */
+
+.room-details {
+    width: 100%;
+    padding: 20px;
+}
+
+.room-details h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.room-details p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+/* ROOM INFO */
+
+.room-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+/* BUTTON */
+
+.view-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+    /* ========================================
+   ROOM DETAILS PAGE
+======================================== */
+
+
+    /* Rooms page */
+    #room-container {
+        width: 92%;
+        grid-template-columns: 1fr;
+    }
+
+    .room-image img {
+        height: 250px;
+    }
+
+
+    /* Room details page */
+    .details-main {
+        padding: 85px 0 var(--space-md);
+    }
+
+    .details-main > h1 {
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-md);
+        margin-top: 0;
+    }
+
+
+    /* Put gallery and information vertically */
+    .room-details-page {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+
+
+    /* Gallery */
+    .room-gallery {
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        gap: var(--space-sm);
+    }
+
+
+    /* Gallery images */
+    .room-gallery img {
+        width: 100%;
+        height: 250px;
+
+        object-fit: cover;
+    }
+
+
+    /* Remove desktop first-image layout */
+    .room-gallery img:first-child {
+        grid-row: auto;
+    }
+
+
+    /* Room information */
+    .room-details-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .room-details-content h1 {
+        font-size: var(--font-size-xl);
+    }
+
+
+    .room-details-content p {
+        font-size: var(--font-size-md);
+        line-height: 1.6;
+    }
+
+
+    /* Features */
+    .room-details-content ul {
+        width: 100%;
+        font-size: var(--font-size-md);
+    }
+
+
+    /* Buttons */
+    .room-actions {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: var(--space-sm);
+    }
+
+
+    .room-actions a,
+    .room-actions button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ========================================
+   ABOUT PAGE - MOBILE RESPONSIVE
+======================================== */
+
+    /* ========================================
+       GENERAL
+    ======================================== */
+
+    .about-main {
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    /* ========================================
+       ABOUT HERO
+    ======================================== */
+
+    .about-hero {
+        width: 100%;
+    }
+
+    .about-intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-content {
+        width: 100%;
+        padding-top: var(--space-lg);
+        padding-bottom: var(--space-lg);
+
+        text-align: center;
+    }
+
+    .intro-content h1 {
+        font-size: var(--font-size-xxl);
+        line-height: 1.2;
+    }
+
+    .intro-content p {
+        font-size: var(--font-size-md);
+        line-height: 1.6;
+    }
+
+    .intro-content button {
+        width: 100%;
+        margin-top: var(--space-sm);
+    }
+
+    .about-intro > .img-box {
+        width: 100%;
+    }
+
+    .about-intro .img-box img {
+        width: 100%;
+        height: 280px;
+        display: block;
+        object-fit: cover;
+    }
+
+
+    /* ========================================
+       OUR STORY
+    ======================================== */
+
+    .story {
+        padding-top: var(--space-lg);
+        padding-bottom: var(--space-lg);
+    }
+
+    .story h2 {
+        text-align: center;
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-md);
+    }
+
+    .story-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .story-content .img-box {
+        width: 100%;
+    }
+
+    .story-content .img-box img {
+        width: 100%;
+        height: 250px;
+        display: block;
+        object-fit: cover;
+    }
+
+    .story-text {
+        width: 100%;
+    }
+
+    .story-text p {
+        font-size: var(--font-size-md);
+        line-height: 1.7;
+        text-align: center;
+    }
+
+
+    /* ========================================
+       VIDEO
+    ======================================== */
+
+    .video-section {
+        padding-top: var(--space-lg);
+        padding-bottom: var(--space-lg);
+    }
+
+    .video-section h2 {
+        text-align: center;
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-md);
+    }
+
+    .vid-box {
+        width: 100%;
+        min-height: 250px;
+    }
+
+
+    /* ========================================
+       WHAT WE OFFER
+    ======================================== */
+
+    .offer {
+        padding: var(--space-lg) 5%;
+    }
+
+    .offer h2 {
+        text-align: center;
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-md);
+    }
+
+    .offer-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .offer-card {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* ========================================
+       WHY CHOOSE STAYFLOW
+    ======================================== */
+
+    .why-choose {
+        padding: var(--space-lg) 5%;
+    }
+
+    .why-choose h2 {
+        text-align: center;
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-md);
+    }
+
+    .why-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .why-content .img-box {
+        width: 100%;
+    }
+
+    .why-content .img-box img {
+        width: 100%;
+        height: 250px;
+        display: block;
+        object-fit: cover;
+    }
+
+    .benefits {
+        width: 100%;
+    }
+
+    .benefits p {
+        font-size: var(--font-size-md);
+        line-height: 1.5;
+        margin-bottom: var(--space-sm);
+    }
+
+
+    /* ========================================
+       CTA
+    ======================================== */
+
+    .cta {
+        padding: var(--space-xl) 5%;
+        text-align: center;
+    }
+
+    .cta h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .cta p {
+        font-size: var(--font-size-md);
+        line-height: 1.6;
+    }
+
+    .cta button {
+        width: 100%;
+        margin-top: var(--space-sm);
+    }
+
+}
+
+/* ========================================
+   CONTACT PAGE
+======================================== */
+
+.contact-section {
+    width: 100%;
+    padding: var(--space-lg) 0;
+}
+
+.contact-section > h2 {
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-xs);
+}
+
+.contact-section > p {
+    text-align: center;
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+    padding: 0 var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+
+/* ========================================
+   CONTACT CONTENT
+======================================== */
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+
+/* ========================================
+   CONTACT INFORMATION
+======================================== */
+
+.contact-info {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-md);
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+
+    font-size: var(--font-size-md);
+    line-height: 1.5;
+    margin-bottom: var(--space-sm);
+}
+
+.contact-info i {
+    flex-shrink: 0;
+}
+
+
+/* ========================================
+   CONTACT FORM
+======================================== */
+
+.contact-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.contact-form label {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    margin-top: var(--space-xs);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: var(--space-sm);
+
+    font-family: inherit;
+    font-size: var(--font-size-md);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: var(--space-sm);
+
+    font-size: var(--font-size-md);
+    font-weight: 600;
+
+    border: none;
+    border-radius: var(--radius-md);
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+
+  /* TABLET */
+@media (max-width: 600px) {
+    .room-grid {
+        grid-template-columns: 1fr;
+    }
+}

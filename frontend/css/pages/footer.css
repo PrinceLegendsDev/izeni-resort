@@ -1,0 +1,141 @@
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding-top: var(--space-xl);
+}
+
+
+/* Main footer layout */
+
+.footer-container {
+    width: min(90%, var(--container-width));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-xl);
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-sm);
+}
+
+.footer-brand p {
+    max-width: 400px;
+
+    color: var(--color-text-light);
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.site-footer h3 {
+    font-size: var(--font-size-md);
+
+    margin-bottom: var(--space-md);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-xs);
+
+    margin-bottom: var(--space-sm);
+}
+
+.footer-contact i {
+    width: 20px;
+}
+
+.footer-contact a {
+    color: var(--color-secondary);
+}
+
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-sm);
+}
+
+.footer-links a {
+    color: var(--color-text-light);
+
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-accent);
+}
+
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.social-links a {
+    color: var(--color-secondary);
+
+    font-size: var(--font-size-xl);
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--color-accent);
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+    width: 90%;
+    margin: var(--space-xl) auto 0;
+
+    padding: var(--space-md) 0;
+
+    border-top: 1px solid var(--color-border);
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: var(--color-text-light);
+
+    font-size: var(--font-size-sm);
+}

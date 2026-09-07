@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Checkout | StayFlow</title>
+
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+
+    <main>
+
+        <section class="container checkout-section">
+
+            <div class="checkout-header">
+
+                <h1>Checkout</h1>
+
+                <p>
+                    Complete your details to place your order.
+                </p>
+
+            </div>
+
+
+            <div class="checkout-layout">
+
+
+                <!-- CUSTOMER DETAILS -->
+
+                <div class="checkout-details">
+
+                    <h2>Customer Details</h2>
+
+
+                    <form id="checkout-form">
+
+
+                        <div class="form-group">
+
+                            <label for="customer-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customer-name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="customer-phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="customer-phone"
+                                name="phone"
+                                placeholder="097 XXX XXXX"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="location">
+                                Room / Table Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="location"
+                                name="location"
+                                placeholder="e.g. Room 204 or Table 5"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="order-type">
+                                Order Type
+                            </label>
+
+                            <select
+                                id="order-type"
+                                name="orderType"
+                                required
+                            >
+
+                                <option value="">
+                                    Select order type
+                                </option>
+
+                                <option value="Room Service">
+                                    Room Service
+                                </option>
+
+                                <option value="Restaurant">
+                                    Restaurant / Table
+                                </option>
+
+                                <option value="Takeaway">
+                                    Takeaway
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="place-order-btn"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            Place Order
+
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+
+
+                <!-- ORDER SUMMARY -->
+
+                <div class="checkout-summary">
+
+                    <h2>Your Order</h2>
+
+                    <div id="checkout-items"></div>
+
+
+                    <div class="checkout-total">
+
+                        <span>Total</span>
+
+                        <strong id="checkout-total">
+                            ZMW 0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer id="footer"></footer>
+
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>

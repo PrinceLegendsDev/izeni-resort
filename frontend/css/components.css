@@ -1,0 +1,28 @@
+        /* CARD   */
+.card {
+    background-color: var(--color-text-light);
+    color: var(--color-secondary);
+
+    border: 1px solid var(--color-text-light);
+    border-radius: var(--radius-md);
+
+    padding: var(--space-md);
+
+    box-shadow: var(--shadow-sm);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+main {
+    padding-top: 70px;
+}
+a {
+    text-decoration: none;
+}

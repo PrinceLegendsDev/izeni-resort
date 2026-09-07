@@ -1,0 +1,331 @@
+  /* ========================================
+   HOME PAGE
+======================================== */
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-images {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-images img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: heroFade 15s infinite;
+}
+
+.hero-images img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero-images img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.hero-images img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+
+/* ========================================
+   HERO IMAGE ANIMATION
+======================================== */
+
+@keyframes heroFade {
+
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* ========================================
+   STICKY BOOKING BUTTON
+======================================== */
+
+.stick-book {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.stick-book a {
+    display: block;
+    width: min(90vw, 420px);
+    min-height: 52px;
+    padding: 14px 24px;
+
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: var(--space-sm);
+
+    background-color: var(--color-text);
+    color: var(--color-secondary);
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.stick-book a:hover {
+    background-color: var(--color-card);
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   HOME CONTENT
+======================================== */
+
+.home-cards {
+    padding: var(--space-md) 0;
+}
+
+
+/* ========================================
+   WHY STAYFLOW
+======================================== */
+
+.home-reason {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    align-items: center;
+
+    padding: var(--space-md) 0;
+}
+
+.home-reason img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.home-reason img:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.why-us p {
+    font-size: var(--font-size-xl);
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   CARDS
+======================================== */
+
+.card h2 {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-accent);
+}
+
+
+/* ========================================
+   HOTEL DETAILS
+======================================== */
+
+.home-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+
+    padding: var(--space-md) 0;
+}
+
+.home-details .card {
+    font-size: var(--font-size-md);
+}
+
+.home-details p {
+    font-size: var(--font-size-lg);
+    line-height: 1.5;
+}
+  
+  /*body {
+    font-family: inter;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+.home-cards {
+    padding: var(--space-md);
+}
+.hero {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    max-height: 90vh;
+}
+.hero-images img {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-images img:first-child {
+    opacity: 1;
+}
+.home-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+    width: 90%;
+    margin: 0 auto;
+}
+.home-details .card {
+    font-size: var(--font-size-md);
+}
+.why-us p {
+    font-size: var(--font-size-xl);
+}
+.card h2 {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-accent);
+}
+.home-details p {
+    font-size: var(--font-size-lg);
+}
+.home-reason {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+}
+.home-reason img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+.home-reason img:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+.home-btn:hover {
+    background-color: var(--color-card);
+}
+.stick-book {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.stick-book a {
+    width: min(90%, 420px);
+    min-height: 52px;
+    padding: 14px 24px;
+    font-size: var(--font-size-lg);
+    border-radius: var(--space-sm);
+    font-weight: bold;
+    background-color: var(--color-text);
+    color: var(--color-secondary);
+}
+.hero-images {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-images img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    animation: heroFade 15s infinite;
+}
+
+.hero-images img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero-images img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.hero-images img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+@keyframes heroFade {
+
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+   /* roomdetails.css*/

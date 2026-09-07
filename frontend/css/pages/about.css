@@ -1,0 +1,399 @@
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+
+/* ========================================
+   SECTION SPACING
+======================================== */
+
+.about-hero,
+.story,
+.video-section,
+.offer,
+.why-choose,
+.cta {
+    padding: var(--space-lg) 0;
+}
+
+
+/* ========================================
+   ABOUT HERO
+======================================== */
+
+.about-intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+
+    width: min(92%, var(--container-width));
+    margin: 0 auto;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+
+    text-align: center;
+}
+
+.intro-content h1 {
+    font-size: var(--font-size-xxl);
+}
+
+.intro-content p {
+    font-size: var(--font-size-xl);
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   ABOUT HERO BUTTON
+======================================== */
+
+.about-intro button {
+    width: min(100%, 150px);
+
+    padding: var(--space-xs);
+
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+
+    border: none;
+    border-radius: var(--radius-lg);
+
+    color: var(--color-secondary);
+    background: var(--color-text-hover);
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.about-intro button:hover {
+    background: var(--color-card);
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   IMAGES
+======================================== */
+
+.img-box {
+    width: 100%;
+}
+
+.img-box img {
+    display: block;
+
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-xl);
+}
+
+
+/* ========================================
+   OUR STORY
+======================================== */
+
+.story {
+    width: min(92%, var(--container-width));
+    margin: 0 auto;
+}
+
+.story h2 {
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-md);
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+
+    align-items: center;
+}
+
+.story-text {
+    width: 100%;
+
+    padding: var(--space-lg);
+
+    background: var(--color-text);
+    color: var(--color-secondary);
+
+    border-radius: var(--radius-xl);
+}
+
+.story-text p {
+    font-size: var(--font-size-xl);
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   VIDEO
+======================================== */
+
+.video-section {
+    width: min(92%, var(--container-width));
+    margin: 0 auto;
+}
+
+.video-section h2 {
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-md);
+}
+
+.vid-box {
+    width: 100%;
+    height: 370px;
+
+    background-color: var(--color-text-light);
+
+    border-radius: var(--radius-lg);
+}
+
+
+/* ========================================
+   WHAT WE OFFER
+======================================== */
+
+.offer {
+    width: min(92%, var(--container-width));
+    margin: 0 auto;
+}
+
+.offer h2 {
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-md);
+}
+
+.offer-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+.offer-card {
+    padding: var(--space-md);
+
+    text-align: center;
+
+    border-radius: var(--radius-lg);
+}
+
+.offer-card i {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-sm);
+}
+
+.offer-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-xs);
+}
+
+.offer-card p {
+    font-size: var(--font-size-lg);
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   WHY CHOOSE STAYFLOW
+======================================== */
+
+.why-choose {
+    width: min(92%, var(--container-width));
+    margin: 0 auto;
+}
+
+.why-choose > h2 {
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-md);
+}
+
+.why-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+
+    align-items: center;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.benefits p {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+
+    font-size: var(--font-size-xl);
+}
+
+.benefits i {
+    font-size: var(--font-size-lg);
+}
+
+
+/* ========================================
+   CALL TO ACTION
+======================================== */
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-xs);
+}
+
+.cta p {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.cta button {
+    padding: var(--space-xs) var(--space-sm);
+
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+
+    border: none;
+    border-radius: var(--radius-md);
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: var(--color-text-hover);
+    transform: translateY(-2px);
+}
+
+
+
+/*.about-hero,
+.story,
+.video-section,
+.offer,
+.why-choose {
+    padding: var(--space-sm);
+}
+.about-intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    align-items: center;
+    justify-content: center;
+}
+.about-intro button {
+    width: 100%;
+    max-width: 150px;
+    padding: var(--font-size-md);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    border-radius: var(--radius-lg);
+    color: var(--color-secondary);
+    background: var(--color-text-hover);
+}
+.about-intro button:hover {
+    background: var(--color-card);
+}
+.img-box img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.about-main img {
+    border-radius: var(--radius-xl);
+}
+.story-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+}
+.vid-box {
+    width: 100%;
+    height: 370px;
+    background-color: var(--color-text-light);
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+.offer-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+.why-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+}
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cta p{
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-sm);
+}
+.cta button {
+   font-size: var(--font-size-lg);
+   font-weight: 700;
+   border-radius: var(--radius-md);
+   padding:  var(--space-xs);
+}
+.cta button:hover {
+    background-color: var(--color-text-hover);
+}
+.story-text {
+    width: 100%;
+    background: var(--color-text);
+    padding: var(--space-sm);
+    border-radius: var(--radius-xl);
+    color: var(--color-secondary);
+}
+.story-text,
+.intro-content,
+.benefits p {
+    font-size: var(--font-size-xl);
+}
+.intro-content,
+.story,
+.video-section,
+.offer,
+.offer-card,
+.why-choose h1, h2, h3 {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    margin: var(--space-md);
+}

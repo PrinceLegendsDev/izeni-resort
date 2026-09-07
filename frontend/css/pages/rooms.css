@@ -1,0 +1,311 @@
+/* ========================================
+   ROOMS PAGE
+======================================== */
+
+.room-header {
+    text-align: center;
+    padding: var(--space-lg) 0 var(--space-md);
+}
+
+.room-header h1 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-xs);
+}
+
+.room-header p {
+    font-size: var(--font-size-lg);
+}
+
+
+/* ========================================
+   ROOM GRID
+======================================== */
+
+#room-container {
+    width: min(92%, var(--container-width));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+
+/* ========================================
+   ROOM CARD
+======================================== */
+
+.room-item {
+    overflow: hidden;
+}
+
+.room-image {
+    overflow: hidden;
+    border-radius: var(--radius-xl);
+}
+
+.room-image img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.room-image img:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+
+/* ========================================
+   ROOM INFORMATION
+======================================== */
+
+.room-details {
+    text-align: center;
+    color: var(--color-secondary);
+    padding: var(--space-sm) 0;
+}
+
+.room-details h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-accent);
+    margin-bottom: var(--space-xs);
+}
+
+.room-details p {
+    font-size: var(--font-size-lg);
+    line-height: 1.5;
+}
+
+.room-info {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin: var(--space-sm) 0;
+}
+
+
+/* ========================================
+   VIEW ROOM BUTTON
+======================================== */
+
+.room-item a {
+    display: block;
+    width: 100%;
+
+    padding: var(--space-xs);
+
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+
+    text-align: center;
+
+    background: var(--color-background);
+    color: var(--color-text);
+
+    border-radius: var(--radius-md);
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.room-item a:hover {
+    background: var(--color-text-light);
+    transform: translateY(-2px);
+}
+
+   /* ========================================
+   ROOM DETAILS PAGE
+======================================== */
+
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.details-main {
+    padding: 75px 0 var(--space-lg);
+}
+
+.details-main > h1 {
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-lg);
+}
+
+
+/* ========================================
+   ROOM DETAILS LAYOUT
+======================================== */
+
+.room-details-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    align-items: start;
+}
+
+
+/* ========================================
+   ROOM GALLERY
+======================================== */
+
+.room-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    gap: var(--space-sm);
+
+    height: 450px;
+}
+
+.room-gallery img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-lg);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.room-gallery img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+
+/* ========================================
+   MAIN GALLERY IMAGE
+======================================== */
+
+.room-gallery img:first-child {
+    grid-row: 1 / 3;
+}
+
+
+/* ========================================
+   ROOM INFORMATION
+======================================== */
+
+.room-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: var(--space-sm);
+
+    text-align: center;
+}
+
+.room-details-content h1 {
+    font-size: var(--font-size-xxl);
+}
+
+.room-details-content p {
+    font-size: var(--font-size-lg);
+    line-height: 1.5;
+}
+
+.room-details-content h3 {
+    font-size: var(--font-size-xl);
+    margin-top: var(--space-sm);
+}
+
+
+/* ========================================
+   ROOM FEATURES
+======================================== */
+
+.room-details-content ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-xs);
+
+    padding: 0;
+
+    list-style-position: inside;
+
+    font-size: var(--font-size-lg);
+}
+
+
+/* ========================================
+   ROOM ACTIONS
+======================================== */
+
+.room-actions {
+    display: flex;
+    justify-content: center;
+
+    gap: var(--space-sm);
+
+    margin-top: var(--space-sm);
+}
+
+.room-actions a,
+.room-actions button {
+    padding: var(--space-xs) var(--space-sm);
+
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+
+    border-radius: var(--radius-md);
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+/* BACK TO ROOMS */
+
+.room-actions a {
+    background: var(--color-secondary);
+    color: var(--color-card);
+}
+
+.room-actions a:hover {
+    background: var(--color-text);
+    transform: translateY(-2px);
+}
+
+
+/* BOOK ROOM */
+
+.room-actions button {
+    border: none;
+
+    color: var(--color-border);
+}
+
+.room-actions button:hover {
+    background: var(--color-text);
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   ROOM STATUS
+======================================== */
+
+.occupied {
+    background-color: red;
+}
+
+.available {
+    background-color: green;
+}
